@@ -1,0 +1,20 @@
+﻿@using WebApplication17.Models.ShapeModel.BaseShape;
+@{
+    List<ShapeDicorator> model;
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="col-md-10 text-center">
+    <img src="/css/file-shapes-for-kids-1592568510.jpg" />
+</div>
+<div class="text-center">
+    @{
+        for(int i = 0; i < Model.Count; i++)
+        {
+            <p>Shape @i</p>
+            <p> @Model[i]</p>
+
+            <br />
+        }
+    }
+</div>
